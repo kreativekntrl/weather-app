@@ -1,0 +1,57 @@
+:root {
+    --primary: #F0F8FF;
+    --secondary:  #59acff;
+    --light-dark: #71a2fc;
+    --dark: #58a1d6;
+    --border-radius: .3rem;
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--primary);
+    margin: 0;
+    padding: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    color: var(--dark);
+    line-height: 1.5;
+    font-size: 16px;
+  }
+
+  h1, h2, h3 {
+      margin: 0;
+      color: var(--dark);
+      line-height: 1.25;
+  }
+
+ main {
+     margin: 20px auto;
+     width: 94%; 
+ } 
+
+ p {
+     font-size: 1.2rem;
+ }
+
+ .searchBtn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: 5px;
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--dark);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+ }
+
+ .searchBtn:hover {
+    color: var(--secondary);
+
+ }
