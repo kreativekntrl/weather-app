@@ -19,8 +19,16 @@ body {
     line-height: 1.5;
     font-size: 16px;
   }
+  
+  header {
+      background-color: var(--dark);
+  }
 
-  h1, h2, h3 {
+  h1 {
+      color: var(--primary);
+  }
+
+ h2, h3 {
       margin: 0;
       color: var(--dark);
       line-height: 1.25;
@@ -33,6 +41,10 @@ body {
 
  p {
      font-size: 1.2rem;
+ }
+
+ .form-input {
+     width: 100%;
  }
 
  .searchBtn {
@@ -55,3 +67,15 @@ body {
     color: var(--secondary);
 
  }
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .card {
+        width: 25%;
+    }
+}
