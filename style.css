@@ -68,12 +68,13 @@ body {
 
  }
 
+ /*for md screen*/
 @media screen and (min-width: 768px) {
     .card {
         width: 50%;
     }
 }
-
+/*for lg screen*/
 @media screen and (min-width: 992px) {
     .card {
         width: 25%;
