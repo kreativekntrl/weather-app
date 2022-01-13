@@ -71,6 +71,16 @@ body {
  .list-group {
      display: none;
      border: 3px solid var(--dark);
+     background-color: white;
+     padding: 8px;
+     list-style: none;
+ }
+
+ .list {
+    border: 3px solid var(--dark);
+    background-color: white;
+    padding: 8px;
+    list-style: none;
  }
 
  /*for md screen*/

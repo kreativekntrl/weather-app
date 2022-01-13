@@ -4,6 +4,10 @@ var cityName = $("#city-name");
 var searchBtn = $("#search-btn");
 var searchInput = $("#city-search");
 var currentDate = moment().format("(ddd, MMM Do)");
+var tempLi = $("#current-temp");
+var windLi = $("#current-wind");
+var humidityLi = $("#current-humidity");
+var uviLi = $("#current-uvi");
 var search;
 
 //On click event for search button and stores text of searched city as a variable called search
@@ -54,29 +58,25 @@ function fetchWeather() {
     currentWind = data.current.wind_speed;
     currentHumidity = data.current.humidity;
     currentUVI = data.current.uvi;
-    console.log(currentTemp);
-    console.log(currentWind);
-    console.log(currentHumidity);
-    console.log(currentUVI);
-    console.log(data);
     displayCurrent(currentTemp, currentWind, currentHumidity, currentUVI, search);
   })
 }
 
+//appends the parsed data to the div container in a list 
 function displayCurrent() {
   currentWeatherCon.append(cityName.text(search +  " " + currentDate));
   currentWeatherCon.css("display", "block");
-  currentWeatherCon.append(currentTemp);
-  currentWeatherCon.append(currentWind);
-  currentWeatherCon.append(currentHumidity);
-  currentWeatherCon.append(currentUVI);
+  tempLi.append("Temp: " + currentTemp + "°F");
+  windLi.append("Wind: " + currentWind + "MPH");
+  humidityLi.append("Humidity: " + currentHumidity + "%");
+  uviLi.append("UV Index: " + currentUVI);
 
 }
 
 searchBtn.on("click", handleFormSubmit);
 
-
-//appends the parsed data to the div container in a list 
+//Still Needs to store recent searches in local storage and append them
+//Still needs 5 day weather forcast cards 
 
 
 
