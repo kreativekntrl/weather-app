@@ -1,45 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" 
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" 
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"    
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="style.css" rel="stylesheet">
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
     <title>Weather App</title>
 </head>
+
 <body>
-<header>
-    <h1>Current Weather Dashboard</h1>
-</header>
+    <header>
+        <h1>Current Weather Dashboard</h1>
+    </header>
 
-<main class="flex-row">
-    <div class="form container row card">
-        <h2 class="form-header">Search Weather by City:</h2>
-        <form id="user-form" class="card-body">
-            <label for="city-search"></label><br>
-            <input name="city-search" id="city-search" type="text" class="form-input" placeholder="San Diego"/><br>
-            <button type="submit" id="search-btn" class="searchBtn">Search</button>
-        </form>
-    </div>
+    <main class="flex-row">
+        <div class="form container row card">
+            <h2 class="form-header">Search Weather by City:</h2>
+            <form id="user-form" class="card-body">
+                <label for="city-search"></label><br>
+                <input name="city-search" id="city-search" type="text" class="form-input" placeholder="San Diego" /><br>
+                <button type="submit" id="search-btn" class="searchBtn">Search</button>
+            </form>
+        </div>
 
-    <div class="container">
-        <h3 class="display-header">Displaying Current Weather for :<span id="weather-search-term"></span></h2>
-        <div id="weather-container" class="list-group"></div>
-    </div>
-</main>
+        <div class="container">
+            <h3 class="display-header">Displaying Current Weather for :<span id="weather-search-term"></span></h2>
+                <div id="current-weather-container" class="list-group">
+                    <h2 id="city-name" class="cityName searchInput"></h2>
+                </div>
+        </div>
+    </main>
 
-<script src="script.js"></script>
-<script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 </body>
+
 </html>
