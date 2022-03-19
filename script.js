@@ -45,7 +45,6 @@ function fetchWeather() {
   "&lon=" +
   lon +
   "&exclude=minutely,hourly,alerts&appid=8df1b4f50fc18065282d76ad07ce45c3&units=imperial";
-  console.log(requestUrl);
   
   fetch(requestUrl)
   .then(function (response){

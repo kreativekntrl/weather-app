@@ -55,6 +55,9 @@ body {
      margin: auto;
      margin-bottom: 10px;
  }
+ .search {
+     padding: 8px;
+ }
 
  .form-input {
      width: 100%;
