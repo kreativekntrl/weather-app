@@ -65,10 +65,10 @@ function fetchWeather() {
 function displayCurrent() {
   currentWeatherCon.append(cityName.text(search +  " " + currentDate));
   currentWeatherCon.css("display", "block");
-  tempLi.append("Temp: " + currentTemp + "°F");
-  windLi.append("Wind: " + currentWind + "MPH");
-  humidityLi.append("Humidity: " + currentHumidity + "%");
-  uviLi.append("UVI: " + currentUVI);
+  tempLi.text("Temp: " + currentTemp + "°F");
+  windLi.text("Wind: " + currentWind + "MPH");
+  humidityLi.text("Humidity: " + currentHumidity + "%");
+  uviLi.text("UVI: " + currentUVI);
 }
 
 searchBtn.on("click", handleFormSubmit);
