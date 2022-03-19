@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: var(--primary);
+    background-image: url("./assets/clouds.jpg");
     margin: 0;
     padding: 0;
     font-family: "IBM Plex Sans", sans-serif;
@@ -22,6 +22,13 @@ body {
   
   header {
       background-color: var(--dark);
+      padding: 8px;
+  }
+
+  .sub-header {
+      float: right;
+      color: var(--dark);
+      margin-right: 10px;
   }
 
   h1 {
@@ -32,6 +39,7 @@ body {
       margin: 0;
       color: var(--dark);
       line-height: 1.25;
+      font-weight: bold;
   }
 
  main {
@@ -43,8 +51,15 @@ body {
      font-size: 1.2rem;
  }
 
+ .form {
+     margin: auto;
+     margin-bottom: 10px;
+ }
+
  .form-input {
      width: 100%;
+     padding: 8px;
+     border-radius: 8px;
  }
 
  .searchBtn {
@@ -76,7 +91,7 @@ body {
      list-style: none;
  }
 
- .list {
+ .listParams {
     border: 3px solid var(--dark);
     background-color: white;
     padding: 8px;
@@ -93,5 +108,9 @@ body {
 @media screen and (min-width: 992px) {
     .card {
         width: 25%;
+    }
+    .form {
+        margin: revert;
+        margin-bottom: 10px;
     }
 }

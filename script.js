@@ -69,14 +69,13 @@ function displayCurrent() {
   tempLi.append("Temp: " + currentTemp + "°F");
   windLi.append("Wind: " + currentWind + "MPH");
   humidityLi.append("Humidity: " + currentHumidity + "%");
-  uviLi.append("UV Index: " + currentUVI);
-
+  uviLi.append("UVI: " + currentUVI);
 }
 
 searchBtn.on("click", handleFormSubmit);
 
 //Still Needs to store recent searches in local storage and append them
-//Still needs 5 day weather forcast cards 
+//Still needs 5 day weather forecast cards  
 
 
 
