@@ -58,10 +58,11 @@ function fetchWeather() {
       displayCurrent(currentTemp, currentWind, currentHumidity, currentUVI, search);
 
       for (i = 0; i < 5; i++) {
+        dailyIcon = "https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png";
         dailyTemp = data.daily[i].temp.max;
         dailyWind = data.daily[i].wind_speed;
         dailyHumidity = data.daily[i].humidity;
-        displayForecast(dailyTemp, dailyWind, dailyHumidity, search);
+        displayForecast(dailyIcon, dailyTemp, dailyWind, dailyHumidity, search);
       }
     })
 }
@@ -85,12 +86,12 @@ function displayForecast() {
   forecastDisplay.append(date);
 
   // var dailyIcon = "https://openweathermap.org/img/wn/" + data.daily[i].weather[0].icon + "@2x.png";
-  // var imgDisplay = $("<img>");
-  // imgDisplay.attr("src", dailyIcon);
-  // forecastDisplay.append(imgDisplay);
+  var imgDisplay = $("<img>");
+  imgDisplay.attr("src", dailyIcon);
+  forecastDisplay.append(imgDisplay);
 
   var dailyTempP = $("<p>");
-  dailyTempP.text("Temperature: " + dailyTemp);
+  dailyTempP.text("Temp: " + dailyTemp);
   forecastDisplay.append(dailyTempP);
 
   var dailyWindP = $("<p>");
@@ -104,8 +105,4 @@ function displayForecast() {
   $("#forecast").append(forecastDisplay);
 }
 
-
 searchBtn.on("click", handleFormSubmit);
-
-//Still Needs to store recent searches in local storage and append them
-//Still needs 5 day weather forecast cards  

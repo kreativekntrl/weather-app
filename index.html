@@ -24,14 +24,15 @@
         <div class="form container row card form">
             <form id="user-form" class="card-body search">
                 <label for="city-search"></label><br>
-                <input name="city-search" id="city-search" type="text" class="form-input" placeholder="enter a city.." /><br>
+                <input name="city-search" id="city-search" type="text" class="form-input"
+                    placeholder="enter a city.." /><br>
                 <button type="submit" id="search-btn" class="searchBtn">Search</button>
             </form>
         </div>
 
         <div class="container">
             <div id="current-weather-container" class="list-group">
-                    <h3 class="display-header">Current Weather:<span id="weather-search-term"></span></h2>
+                <h3 class="display-header">Current Weather:<span id="weather-search-term"></span></h2>
                     <h2 id="city-name" class="cityName searchInput"></h2>
                     <ul class="listParams">
                         <li id="current-temp"></li>
@@ -39,10 +40,10 @@
                         <li id="current-humidity"></li>
                         <li id="current-uvi"></li>
                     </ul>
-                </div>
+            </div>
+            <section class="row" id="forecast">
+            </section>
         </div>
-        <section class="row" id="forecast">
-        </section>
     </main>
 
     <script src="script.js"></script>
